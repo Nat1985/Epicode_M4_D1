@@ -10,38 +10,87 @@
 <body>
     <div class="container">
         <div class="exercise">
-            <h2>Esercizio 1</h2>
-            <p>Inserisci due numeri interi. La funzione ritorna true se almeno uno di loro o la loro somma è uguale a 50.</p>
-            <input type="text" id="1_1" placeholder="Primo numero">
-            <input type="text" id="1_2" placeholder="Secondo numero">
-            <button type="submit" onclick="exercise1()">Invia</button>
+            <div class="left">
+                <h2>Esercizio 1</h2>
+                <p>Inserisci due numeri interi. La funzione ritorna true se almeno uno di loro o la loro somma è uguale a 50.</p>
+                <input type="text" id="ex1-1" placeholder="Primo numero">
+                <input type="text" id="ex1-2" placeholder="Secondo numero">
+                <button type="submit" onclick="exercise1()">Invia</button>
+            </div>
+            <div id="result1" class="result"></div>
         </div>
         <div class="exercise">
-            <h2>Esercizio 2</h2>
-            <input type="text" id="2_1" placeholder="Stringa">
-            <input type="text" id="2_2" placeholder="Posizione">
-            <button type="submit" onclick="exercise2()">Invia</button>
+            <div class="left">
+                <h2>Esercizio 2</h2>
+                <p>Inserisci una stringa e una posizione. La funzione rimuove dalla stringa la lettera della posizione indicata.</p>
+                <input type="text" id="ex2-1" placeholder="Stringa">
+                <input type="text" id="ex2-2" placeholder="Posizione">
+                <button type="submit" onclick="exercise2()">Invia</button>
+            </div>
+            <div id="result2" class="result"></div>
         </div>
         <div class="exercise">
-            <h2>Esercizio 3</h2>
-            <input type="text" id="3_1" placeholder="Primo numero">
-            <input type="text" id="3_2" placeholder="Secondo numero">
-            <button type="submit" onclick="exercise3()">Invia</button>
+            <div class="left">
+                <h2>Esercizio 3</h2>
+                <p>Inserisci due numeri. La funzione restituisce true se entrambi sono compresi fra 40 e 60 oppure fra 70 e 100. Altrimenti restituisce false.</p>
+                <input type="text" id="ex3-1" placeholder="Primo numero">
+                <input type="text" id="ex3-2" placeholder="Secondo numero">
+                <button type="submit" onclick="exercise3()">Invia</button>
+            </div>
+            <div id="result3" class="result"></div>
         </div>
         <div class="exercise">
-            <h2>Esercizio 4</h2>
+            <div class="left">
+                <h2>Esercizio 4</h2>
+                <p>Inserisci un nome di città. La funzione restituisce lo stesso nome se inizia con Los o New, altrimenti restituisce false.</p>
+                <input type="text" id="ex4-1" placeholder="Nome città">
+                <button type="submit" onclick="exercise4()">Invia</button>
+            </div>
+            <div id="result4" class="result"></div>
         </div>
         <div class="exercise">
-            <h2>Esercizio 5</h2>
+            <div class="left">
+                <h2>Esercizio 5</h2>
+                <p>Inserisci 5 numeri che comporranno un array. La funzione restituisce la somma di quei numeri.</p>
+                <input type="text" class="value5" placeholder="">
+                <input type="text" class="value5" placeholder="">
+                <input type="text" class="value5" placeholder="">
+                <input type="text" class="value5" placeholder="">
+                <input type="text" class="value5" placeholder="">
+                <button type="submit" onclick="exercise5()">Invia</button>
+            </div>
+            <div id="result5" class="result"></div>
         </div>
         <div class="exercise">
-            <h2>Esercizio 6</h2>
+            <div class="left">
+                <h2>Esercizio 6</h2>
+                <p>Inserisci 5 numeri che comporranno un array. Se l'array non contiene né il numero 1 né il numero 3, la funzione restituisce true, altrimenti restituisce false.</p>
+                <input type="text" class="value6" placeholder="">
+                <input type="text" class="value6" placeholder="">
+                <input type="text" class="value6" placeholder="">
+                <input type="text" class="value6" placeholder="">
+                <input type="text" class="value6" placeholder="">
+                <button type="submit" onclick="exercise6()">Invia</button>
+            </div>
+            <div id="result6" class="result"></div>
         </div>
         <div class="exercise">
-            <h2>Esercizio 7</h2>
+            <div class="left">
+                <h2>Esercizio 7</h2>
+                <p>Inserisci i gradi di un angolo. La funzione restituisce il nome del tipo di angolo (retto, piatto, ecc).</p>
+                <input type="text" id="ex7-1" placeholder="Gradi">
+                <button type="submit" onclick="exercise7()">Invia</button>
+            </div>
+            <div id="result7" class="result"></div>
         </div>
         <div class="exercise">
-            <h2>Esercizio 8</h2>
+            <div class="left">
+                <h2>Esercizio 8</h2>
+                <p>Scrivi un insieme di parole. La funzione restituisce tutte le iniziali di ogni parola (acronimo)</p>
+                <input type="text" id="ex8-1" placeholder="Frase">
+                <button type="submit" onclick="exercise8()">Invia</button>
+            </div>
+            <div id="result8" class="result"></div>
         </div>
     </div>
     <script src="script.js"></script>
