@@ -111,3 +111,36 @@ function exercise8() {
     }
     result8.innerText = firstLetters8.toUpperCase();
 }
+
+//ESERCIZIO 9
+
+function exercise9() {
+    let string9 = (document.getElementById("ex9-1")).value;
+    let result9 = document.getElementById("result9");;
+    let onCallLetter = "";
+    let higherLetter = [];
+    let higherLettersAmount = 0;
+    for(i = 0; i < string9.length; i++) {
+        if(!higherLetter.includes(string9[i])) { 
+            onCallLetter = string9[i];
+            let onCallLettersAmount = 0;
+            for(n = 0; n < string9.length; n++) { 
+                if(string9[n] == onCallLetter) {
+                    onCallLettersAmount++;
+                }
+            }
+            if (onCallLettersAmount > higherLettersAmount) {
+                higherLetter = [onCallLetter];
+                higherLettersAmount = onCallLettersAmount;
+            } else if (onCallLettersAmount == higherLettersAmount) {
+                higherLetter.push(onCallLetter);
+            }
+        }
+    }
+    if(higherLetter.length == 1) {
+        result9.innerText = "Lettera più frequente: " + higherLetter + ". Utilizzata " + higherLettersAmount + " volte.";
+    } else {
+        result9.innerText = "Lettere più frequenti: " + higherLetter + ". Utilizzate " + higherLettersAmount + " volte ciascuna.";
+    }
+    
+}

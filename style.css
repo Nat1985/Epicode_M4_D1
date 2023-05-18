@@ -55,7 +55,7 @@ input {
     border-radius: 20px; 
 }
 
-#ex8-1 {
+#ex8-1, #ex9-1 {
     width: 100%;
     text-align: right;
     padding: 0px 30px;
@@ -75,6 +75,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: aliceblue;
     border-top: 1px solid rgb(223, 231, 238);
     border-left: 1px solid rgb(223, 231, 238);
