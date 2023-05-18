@@ -22,7 +22,7 @@ body {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0px 20px;
+    padding: 10px 20px;
     margin: 10px 0px;
     background-color: white;
     border-radius: 10px;
@@ -55,7 +55,7 @@ input {
     border-radius: 20px; 
 }
 
-#ex8-1, #ex9-1 {
+#ex8-1, #ex9-1, #ex10-1, #ex10-2 {
     width: 100%;
     text-align: right;
     padding: 0px 30px;

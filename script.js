@@ -116,7 +116,7 @@ function exercise8() {
 
 function exercise9() {
     let string9 = (document.getElementById("ex9-1")).value;
-    let result9 = document.getElementById("result9");;
+    let result9 = document.getElementById("result9");
     let onCallLetter = "";
     let higherLetter = [];
     let higherLettersAmount = 0;
@@ -141,6 +141,34 @@ function exercise9() {
         result9.innerText = "Lettera più frequente: " + higherLetter + ". Utilizzata " + higherLettersAmount + " volte.";
     } else {
         result9.innerText = "Lettere più frequenti: " + higherLetter + ". Utilizzate " + higherLettersAmount + " volte ciascuna.";
+    }
+    
+}
+
+// ESERCIZIO 10 //bisogna ignorare i caratteri speciali
+
+function exercise10() {
+    let string10_1 = ((document.getElementById("ex10-1").value).toLowerCase()).replace(/ /g, "");
+    let string10_2 = ((document.getElementById("ex10-2").value).toLowerCase()).replace(/ /g, "");
+    let string10_2Array = string10_2.split("");
+    let result10 = document.getElementById("result10");
+    if(string10_1.length == string10_2Array.length) {
+        for(i = 0; i < string10_1.length; i++) {
+            for(n = string10_2Array.length; n > 0; n--) {
+                if(string10_1[i] == string10_2Array[n - 1]) {
+                    string10_2Array.splice(n - 1, 1);
+                    break;
+                }
+            }
+        }
+        if(string10_2Array.length == 0) {
+            result10.innerText = "Sono anagrammi! (" + true + ")";
+
+        } else {
+            result10.innerText = "Non sono anagrammi (" + false + ")";
+        }
+    } else {
+        result10.innerText = "Errore: Inserisci parole con lo stesso numero di lettere";
     }
     
 }
